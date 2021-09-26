@@ -82,11 +82,11 @@ public class MainjFrame extends javax.swing.JFrame {
         work_Panel.setLayout(work_PanelLayout);
         work_PanelLayout.setHorizontalGroup(
             work_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 539, Short.MAX_VALUE)
+            .addGap(0, 805, Short.MAX_VALUE)
         );
         work_PanelLayout.setVerticalGroup(
             work_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 594, Short.MAX_VALUE)
+            .addGap(0, 783, Short.MAX_VALUE)
         );
 
         split_Panel.setRightComponent(work_Panel);

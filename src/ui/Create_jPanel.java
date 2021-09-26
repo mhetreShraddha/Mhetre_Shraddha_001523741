@@ -289,7 +289,7 @@ public class Create_jPanel extends javax.swing.JPanel {
                         .addComponent(lbl_linkdn)
                         .addComponent(jText_FaxNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(lbl_FaxNumber)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl_EmailAddress)
                     .addComponent(jTextEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -313,7 +313,7 @@ public class Create_jPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl_helthpnumber)
                     .addComponent(jText_helthBenNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 244, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -355,7 +355,52 @@ public class Create_jPanel extends javax.swing.JPanel {
             flag= false;
             return;
         }
-        if(jText_TeleNumber.getText().toString().length() < 10){
+        if(jTextGeoData.getText().length() == 0){ // Mandatory Valdation
+            JOptionPane.showMessageDialog(this, "Please Enter Geographic data");
+            flag= false;
+            return;
+        }
+        if(jTextMedicalRecordNum.getText().length() == 0){ // Mandatory Valdation
+            JOptionPane.showMessageDialog(this, "Please Enter Medical record number");
+            flag= false;
+            return;
+        }if(jTextSSN.getText().length() == 0){ // Mandatory Valdation
+            JOptionPane.showMessageDialog(this, "Please Enter Social Security number");
+            flag= false;
+            return;
+        }if(jText_FaxNumber.getText().length() == 0){ // Mandatory Valdation
+            JOptionPane.showMessageDialog(this, "Please Enter FAX number");
+            flag= false;
+            return;
+        }if(jText_bankAcNo.getText().length() == 0){ // Mandatory Valdation
+            JOptionPane.showMessageDialog(this, "Please Enter Bank account numbers");
+            flag= false;
+            return;
+        }if(jText_bioId.getText().length() == 0){ // Mandatory Valdation
+            JOptionPane.showMessageDialog(this, "Please Enter Biometric identifiers");
+            flag= false;
+            return;
+        }if(jText_helthBenNo.getText().length() == 0){ // Mandatory Valdation
+            JOptionPane.showMessageDialog(this, "Please Enter Health plan beneficiary number");
+            flag= false;
+            return;
+        }if(jText_linkdn.getText().length() == 0){ // Mandatory Valdation
+            JOptionPane.showMessageDialog(this, "Please Enter LinkedIn");
+            flag= false;
+            return;
+        }if(jText_ipAdd.getText().length() == 0){ // Mandatory Valdation
+            JOptionPane.showMessageDialog(this, "Please Enter IP Address");
+            flag= false;
+            return;
+        }if(jText_uniId.getText().length() == 0){ // Mandatory Valdation
+            JOptionPane.showMessageDialog(this, "Please Enter Unique Identifire");
+            flag= false;
+            return;
+        }if(jText_vehicleId.getText().length() == 0){ // Mandatory Valdation
+            JOptionPane.showMessageDialog(this, "Please Enter vehicle Identifier");
+            flag= false;
+            return;
+        }if(jText_TeleNumber.getText().toString().length() < 10){
             JOptionPane.showMessageDialog(this, "Please Enter Valid Telephone Number");
             flag= false;
             return;
